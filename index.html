@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title> Negociações </title>
+
+  <link rel="stylesheet" href="css/blocks/reset.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/blocks/header.css">
+  <link rel="stylesheet" href="css/blocks/form.css">
+  <link rel="stylesheet" href="css/blocks/table.css">
+  <link rel="stylesheet" href="css/blocks/footer.css">
+  <link rel="stylesheet" href="css/blocks/info.css">
+
+</head>
+
+
+<body>
+
+  <header class="header container">
+
+    <h1 class="header-title"> Negociações </h1>
+
+    <nav class="header-menu">
+
+      <ul>
+
+        <li class="header-button"> Sair </li>
+        <li class="header-button"> Contatos</li>
+
+      </ul>
+
+
+    </nav>
+
+    
+
+  </header>
+
+  <div id="info" class="container info">
+    
+          <!--<p class="info-data">adicionado com sucesso</p> -->
+    
+  </div>
+
+
+  <form class="form">
+
+    <section class="form-session">
+
+      <label for="data" class="form-label">Data</label>
+
+      <input class="form-data" type="date" id="data" required autofocus />
+
+    </section>
+
+    <section class="form-session">
+
+      <label for="quantidade" class="form-label"> Quantidade </label>
+
+      <input class="form-data" type="number" id="quantidade" required/>
+
+    </section>
+
+    <section class="form-session">
+
+      <label for="valor" class="form-label"> Valor </label>
+
+      <input class="form-data" type="number" id="valor" required />
+
+    </section>
+
+
+
+    <button type="submit" class="form-button">adicionar</button>
+
+    <button  id="botao-apaga" class="form-button form-button-2">apagar Negociações </button>
+
+    
+  </form>
+
+
+  <section id="negociacoes" class="table">
+
+  
+
+
+  </section>
+
+
+  <footer class="footer">
+
+    <p class="footer-text"> Vox Tecnologia Corporation </p>
+
+
+  </footer>
+  <script src="js/app/views/View.js"></script>
+  <script src="js/app/views/NegociacoesView.js"></script>
+  <script src="js/app/models/Negociacao.js"></script>
+  <script src="js/app/controllers/NegociacaoController.js"></script>
+  <script src="js/app/helpers/DataConverter.js"></script>
+  <script src="js/app/models/Negociacoes.js"></script>
+  <script src="js/app/models/Mensagem.js"></script>
+  <script src="js/app/views/MensagemView.js"></script>
+  <script src="js/app/app.js"></script>
+  
+</body>
+
+</html> 

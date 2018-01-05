@@ -1,0 +1,19 @@
+.info{
+
+    margin: 20px auto;
+}
+
+
+.info .info-data{
+
+    margin: auto;
+    text-align: center;
+    box-sizing: content-box;
+    border: 2px solid #6ec8e9;
+    color: #fff;
+    font-weight: bold;
+    background-color: #6ec8e9;
+    width: 50%;
+    border-radius: 4px;
+    padding: 10px;
+}
