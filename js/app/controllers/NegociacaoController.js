@@ -20,10 +20,10 @@ class NegociacaoController {
 
     adiciona(event){
        
-        
+        console.log('adicionando')
         event.preventDefault()               
         this._negociacoes.adiciona(this._criarNegociacao())
-        this._mensagem._texto = 'Negociação adiciona com sucesso'
+        this._mensagem.texto = 'Negociação adiciona com sucesso'
         this._negociacoesView.update(this._negociacoes)
         this._mensagemView.update(this._mensagem)
         this._limpaForm()
@@ -31,7 +31,16 @@ class NegociacaoController {
         
     }
 
+    apaga(){
+
+        console.log('apagando')
+        this._negociacoes.esvazia()
+        this._negociacoesView.update(this._negociacoes)
+        this._mensagem.texto = 'Negociações apagadas com sucesso'
+        this._mensagemView.update(this._mensagem)
     
+    }
+
 
     _limpaForm(){
 
